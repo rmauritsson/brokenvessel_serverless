@@ -6,12 +6,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f6fbfc;
+}
+
 $primaryColor: #1071cf;
+$textColor: #0e1e25;
 
 .container {
   max-width: 1200px;
   margin: auto;
   margin-top: 50px;
+
   font-family: "proxima-nova", sans-serif;
 }
 
@@ -35,12 +41,14 @@ $primaryColor: #1071cf;
 
 /************ NAV BAR *******************/
 .navbar_container {
-  height: 60px;
+  height: 80px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   overflow: hidden;
   justify-content: space-around;
+  background-color: white;
+  font-family: "Open Sans";
 
   img {
     max-height: 40px;
@@ -66,18 +74,20 @@ $primaryColor: #1071cf;
           border: 1px solid #999;
           padding: 0 10px;
           cursor: pointer;
+          white-space: nowrap;
         }
       }
 
       li {
         a {
           text-decoration: none;
-          text-transform: uppercase;
+          text-transform: capitalize;
           font-size: 14px;
-          color: #999;
+          color: $textColor;
           line-height: 60px;
           cursor: pointer;
           padding: 0 10px;
+          font-weight: 700;
 
           &:hover {
             color: $primaryColor;
