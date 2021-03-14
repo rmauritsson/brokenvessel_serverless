@@ -1,21 +1,31 @@
-import logo from "./logo.png";
-import favicon from "./favicon.png";
-import "./App.css";
+import "./App.scss";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import Admin from "./pages/Admin";
+import Counsellor from "./pages/Counsellor";
+import ContactUs from "./pages/ContactUs";
+import Listener from "./pages/Listener";
+import Navbar from "./components/Navbar";
+import TopBarAlert from "./components/TopBarAlert";
+import Assignment from "./pages/Assignment";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={favicon} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Coming Soon
-        </a>
-      </header>
+    <div>
+      <Router>
+        <TopBarAlert />
+        <Navbar />
+        <div className="container">
+          <Switch>
+            <Route path="/adminOnly" component={Admin} />
+            <Route path="/assignment" component={Assignment} />
+            <Route path="/counsellors" component={Counsellor} />
+            <Route path="/contactUs" component={ContactUs} />
+            <Route path="/listener" component={Listener} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }

@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primaryColor: #1071cf;
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  font-family: "proxima-nova", sans-serif;
+}
+
+/************ TOP BAR JS*******************/
+
+.topbar__alert {
+  height: 50px;
+  background-color: $primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 300;
+  font-size: 13px;
+
+  span {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+/************ NAV BAR *******************/
+.navbar_container {
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-around;
+
+  img {
+    max-height: 40px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .navbar {
+    padding: 0 10px;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      .close {
+        display: none;
+        text-align: right;
+        padding: 10px;
+
+        span {
+          font-size: 40px;
+          display: inline-block;
+          border: 1px solid #999;
+          padding: 0 10px;
+          cursor: pointer;
+        }
+      }
+
+      li {
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 14px;
+          color: #999;
+          line-height: 60px;
+          cursor: pointer;
+          padding: 0 10px;
+
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
