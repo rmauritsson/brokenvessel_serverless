@@ -36,6 +36,11 @@ $textColor: #0e1e25;
   span {
     font-weight: bold;
     cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 }
 
