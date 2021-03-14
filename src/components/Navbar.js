@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import logo from "../logo.png";
-import favicon from "../favicon.png";
 
 const Navbar = () => {
   return (
