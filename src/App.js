@@ -13,18 +13,18 @@ function App() {
   return (
     <div>
       <Router>
-        <TopBarAlert />
+        {/* <TopBarAlert /> */}
+
         <Navbar />
-        <div className="container">
-          <Switch>
-            <Route path="/adminOnly" component={Admin} />
-            <Route path="/assignment" component={Assignment} />
-            <Route path="/counsellors" component={Counsellor} />
-            <Route path="/contactUs" component={ContactUs} />
-            <Route path="/listener" component={Listener} />
-            <Route path="/" component={Home} />
-          </Switch>
-        </div>
+
+        <Switch>
+          <Route path="/adminOnly" component={Admin} />
+          <Route path="/assignment" component={Assignment} />
+          <Route path="/counsellor" component={Counsellor} />
+          <Route path="/contactUs" component={ContactUs} />
+          <Route path="/listener" component={Listener} />
+          <Route path="/" component={Home} />
+        </Switch>
       </Router>
     </div>
   );

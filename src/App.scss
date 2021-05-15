@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap");
+@import "./queries/bigphones.scss";
+@import "./queries/smallphones.scss";
+@import "./queries/tablets.scss";
 
 *,
 *::before,
@@ -19,7 +22,6 @@ $textColor: #0e1e25;
 .container {
   max-width: 1200px;
   margin: auto;
-  margin-top: 50px;
 }
 
 /************ TOP BAR JS*******************/
@@ -103,4 +105,35 @@ $textColor: #0e1e25;
   }
 }
 
-//
+// .........Assignment Page..............
+.assignment {
+  display: grid;
+  grid-template-columns: 35% 65%;
+
+  .assignment_left {
+    background-color: $primaryColor;
+    color: white;
+
+    .assignment_left__content {
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        padding: 1.5rem 0;
+      }
+
+      p {
+        padding: 1rem 0;
+      }
+
+      img {
+        width: 55%;
+        height: 55%;
+      }
+    }
+  }
+  .assignment_right {
+  }
+}

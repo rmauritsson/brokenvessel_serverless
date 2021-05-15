@@ -1,0 +1,15 @@
+/*Tablets [601px -> 1200px]*/
+@media only screen and (max-width: 1200px) {
+  // .........Assignment Page..............
+  .assignment {
+    display: grid;
+    grid-template-columns: 40% 60% !important;
+
+    .assignment_left {
+      color: white;
+    }
+    .assignment_right {
+    }
+  }
+  //End of Query
+}

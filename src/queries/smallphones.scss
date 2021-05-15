@@ -1,0 +1,17 @@
+/*Small smartphones [325px -> 425px]*/
+
+@media only screen and (max-width: 425px) {
+  // .........Assignment Page..............
+  .assignment {
+    display: grid;
+    grid-template-columns: 100% !important;
+
+    .assignment_left {
+      background-color: green !important;
+      color: white;
+    }
+    .assignment_right {
+    }
+  }
+  //End of Query
+}
