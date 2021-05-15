@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -8,6 +10,7 @@
 
 body {
   background-color: #f6fbfc;
+  font-family: "Poppins", sans-serif;
 }
 
 $primaryColor: #1071cf;
@@ -17,8 +20,6 @@ $textColor: #0e1e25;
   max-width: 1200px;
   margin: auto;
   margin-top: 50px;
-
-  font-family: "proxima-nova", sans-serif;
 }
 
 /************ TOP BAR JS*******************/
@@ -53,7 +54,6 @@ $textColor: #0e1e25;
   overflow: hidden;
   justify-content: space-around;
   background-color: white;
-  font-family: "Open Sans";
 
   img {
     max-height: 40px;
@@ -102,3 +102,5 @@ $textColor: #0e1e25;
     }
   }
 }
+
+//
