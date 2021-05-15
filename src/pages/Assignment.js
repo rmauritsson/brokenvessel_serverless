@@ -36,7 +36,7 @@ const Assignment = () => {
                 checked={consent}
                 onChange={handleChange}
                 name="consent"
-                color="primary"
+                color="#ffffff"
               />
             }
             label="I agree to the T&Cs of BV"

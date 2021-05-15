@@ -6,7 +6,7 @@ import Counsellor from "./pages/Counsellor";
 import ContactUs from "./pages/ContactUs";
 import Listener from "./pages/Listener";
 import Navbar from "./components/Navbar";
-import TopBarAlert from "./components/TopBarAlert";
+
 import Assignment from "./pages/Assignment";
 
 function App() {
