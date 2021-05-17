@@ -2,11 +2,39 @@ import React, { useState } from "react";
 import InfoGraphic from "../img/info_graphic_1.svg";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
+import hands from "../img/10.png";
+import GetStarted from "../components/getStarted";
+
+const WaitingTime = () => {
+  return (
+    <div className="waiting_time">
+      <div className="waiting_time__desc">
+        <h1>Just a reminder!</h1>
+        <p>
+          Some of the most comforting words in the universe are ‘me too.’ That
+          moment when you find out that your struggle is also someone else’s
+          struggle, that you’re not alone, and that others have been down the
+          same road.
+        </p>
+
+        <p>We are proud of you for having the courage to reach out.</p>
+
+        <h5>
+          Please accept the Terms and Conditions in the Checkbox on your left to
+          get started
+        </h5>
+      </div>
+      <div className="waiting_time__img">
+        <img src={hands} alt="" />
+      </div>
+    </div>
+  );
+};
 
 const Assignment = () => {
   const [consent, setConsent] = useState(false);
 
-  const handleChange = (event) => setConsent(!consent);
+  const handleChange = () => setConsent(!consent);
 
   return (
     <div className="assignment">
@@ -36,14 +64,15 @@ const Assignment = () => {
                 checked={consent}
                 onChange={handleChange}
                 name="consent"
-                color="#ffffff"
               />
             }
             label="I agree to the T&Cs of BV"
           />
         </div>
       </div>
-      <div className="assignment_right">Right</div>
+      <div className="assignment_right">
+        {consent ? <GetStarted /> : <WaitingTime />}
+      </div>
     </div>
   );
 };

@@ -139,5 +139,81 @@ $textColor: #0e1e25;
     }
   }
   .assignment_right {
+    padding: 4rem 5rem;
+  }
+}
+
+.waiting_time {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .waiting_time__desc {
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    span {
+      margin: 2rem 0;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    p {
+      margin: 50px 0;
+      font-weight: 500;
+    }
+  }
+
+  .waiting_time__img {
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// .........Get Started Page..............
+.getstarted {
+  .getstarted_progress {
+    margin-bottom: 2rem;
+  }
+  .getstarted_forms {
+    height: 35rem;
+    h3 {
+      padding: 1rem 0;
+    }
+  }
+  .getstarted_buttons {
+    display: flex;
+    justify-content: space-between;
+    button {
+      padding: 20px;
+      color: white;
+      background-color: $primaryColor;
+      border: none;
+      border-radius: 4px;
+      width: 10rem;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.step_one {
+  .step_one__header {
+    padding-bottom: 1rem;
+  }
+  .step_one__inputs {
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .step_one_inputs_div {
+        width: 70%;
+        padding: 0.25rem 0;
+      }
+    }
   }
 }
